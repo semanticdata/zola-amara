@@ -3,6 +3,6 @@
 <!-- Layout for blog section. -->
 {% block content %}
 <h2 class="blog-title">{{ section.title }}</h2>
-<p class="blog-content">{{ section.content | safe }}</p>
+{{ section.content | safe }}
 {% include "partials/post-loop.html" %}
 {% endblock content %}

@@ -18,11 +18,9 @@
       <a href="{{ config.base_url}}" aria-label="{{ config.title }}">
         <img src="./387-100x100.jpg" alt="Profile Picture" height="75px" width="75px" id="homepage-logo" />
       </a>
-      <a href="{{ config.base_url}}" aria-label="{{ config.title }}">
-        <h1 id="homepage-title">
-          {{ config.title }}
-        </h1>
-      </a>
+      <h1 id="homepage-title">
+        {{ config.title }}
+      </h1>
     </div>
 
     <nav class="homepage-nav">
@@ -55,7 +53,7 @@
 
   </header>
 
-  <main>
+  <main id="homepage-content">
     {% if section.content %}
     {{ section.content | safe }}
     {% endif %}

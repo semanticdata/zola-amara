@@ -3,5 +3,5 @@
 <!-- Layout for all non-blog and non-project sections. -->
 {% block content %}
 <h2 class="section-title">{{ section.title }}</h2>
-<p class="section-content">{{ section.content | safe }}</p>
+{{ section.content | safe }}
 {% endblock content %}

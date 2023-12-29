@@ -1,1 +1,24 @@
 // @use "variables" as vars;
+
+// Footer
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  width: 100%;
+  & i {
+    font-size: 1.25rem;
+  }
+}
+
+footer {
+  margin: auto;
+}
+
+.footer-content {
+  text-align: center;
+}
