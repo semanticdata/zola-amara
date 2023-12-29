@@ -1,17 +1,19 @@
 {% if section.pages %}
 {% for page in section.pages %}
-<hr>
-<article class="post">
+
+{#
+<hr> #}
+
+<article>
+  <a href="{{ page.permalink }}">
+    <h2 class="loop-title">{{ page.title | safe }}</h2>
+  </a>
   <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
     {{
     page.reading_time }} minutes</time>
-  <a href="{{ page.permalink }}">
-    <h2 class="title is-4">{{ page.title | safe }}</h2>
-  </a>
   {% if page.description %}
-  <p>{{ page.description | safe }}</p>
+  <p>{{ page.description | safe }} <a href="{{ page.permalink | safe }}">Read more…</a></p>
   {% endif %}
-  <a href="{{ page.permalink | safe }}">Continue reading…</a>
 </article>
 {% endfor %}
 {% endif %}

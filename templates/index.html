@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+  <title>{{ config.title }} | Home</title>
   <meta name="description" itemprop="about" content="{{ config.description }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="{{ get_url(path='styles.css') }}">
@@ -13,12 +13,13 @@
 <body>
 
   <header>
-    <div>
+
+    <nav id="homepage-nav">
       <a href="{{ config.base_url}}" aria-label="{{ config.title }}">
-        <img src="./387-100x100.jpg" alt="Profile Picture" height="75px" width="75px" />
+        <img src="./387-100x100.jpg" alt="Profile Picture" height="75px" width="75px" id="homepage-picture" />
       </a>
       <a href="{{ config.base_url}}" aria-label="{{ config.title }}">
-        <h1>
+        <h1 id="homepage-title">
           {% if config.title %}
           {{ config.title }}
           {% else %}
@@ -26,28 +27,37 @@
           {% endif %}
         </h1>
       </a>
-    </div>
-
-    <nav>
-      <div>
-        {% for link in config.extra.internalLinks %}
-        <a href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name
-          }}</a>
-        {% endfor %}
-      </div>
-
-      <div>
-        <a href="https://forgetfulnotes.com/" aria-label="Digital Garden" target="_blank">
-          <i class="fa-solid fa-seedling"></i>
-        </a>
-        <a href="https://github.com/semanticdata/zola-guava/" aria-label="GitHub" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="mailto:contact@miguelpimentel.do" aria-label="Email" target="_blank">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
     </nav>
+
+    <nav id="homepage-nav">
+      <ul class="social-nav-homepage">
+        {% for link in config.extra.internalLinks %}
+        <li>
+          <a class="site-nav" href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="nav-icons-homepage">
+        <li>
+          <a href="https://forgetfulnotes.com/" aria-label="Digital Garden" target="_blank">
+            <i class="fa-solid fa-seedling"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/semanticdata/zola-guava/" aria-label="GitHub" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@miguelpimentel.do" aria-label="Email" target="_blank" class="navbars-item">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+
   </header>
 
   <main>

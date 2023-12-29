@@ -7,14 +7,12 @@
   <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
     {{ page.reading_time | safe }} minutes</time>
 
-  {% if page.description %}
-  <p>{{ page.description | safe }}</p>
-  {% endif %}
-  {% if page.toc %}
+  {# {% if page.toc %}
   {% include "partials/toc.html" %}
-  {% endif %}
+  {% endif %} #}
 
-  <hr>
+  {# <hr> #}
+  <h1>{{ page.title }}</h1>
   {{ page.content | safe }}
 
 </article>

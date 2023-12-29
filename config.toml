@@ -22,4 +22,5 @@ smart_punctuation = true
 internalLinks = [
   { url = "posts", name = "Blog" },
   { url = "projects", name = "Projects" },
+  { url = "test", name = "Test" },
 ]
