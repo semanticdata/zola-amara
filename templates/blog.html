@@ -2,9 +2,7 @@
 
 <!-- Layout for blog section. -->
 {% block content %}
-{% if section.description %}
-<p>{{ section.description }}</p>
-{% endif %}
-{{ section.content | safe }}
+<h1>{{ section.title }}</h1>
+<p>{{ section.content | safe }}</p>
 {% include "partials/post-loop.html" %}
 {% endblock content %}
