@@ -95,15 +95,19 @@ time {
 }
 
 // Media and Layout
-@media screen and (max-width: 1500px) {
-  .placeholder {
-    color: inherit;
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1.5rem;
+    margin: 0;
   }
 }
+@media screen and (max-width: 350px) {
+  #homepage-body {
+    justify-content: inherit;
+  }
 
-@media screen and (max-width: 999px) {
-  .placeholder {
-    color: inherit;
+  #homepage-social-list {
+    display: none;
   }
 }
 
