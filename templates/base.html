@@ -30,16 +30,13 @@
     </nav>
   </header>
 
-  {#
-  <hr> #}
-
   <main>
     {% block breadcrumbs %}{% endblock breadcrumbs %}
     {% block content %}{% endblock content %}
   </main>
 
   <footer>
-    <p>Powered by <a href="https://www.getzola.org/">Zola</a>, hosted with <a
+    <p class="footer-content">Powered by <a href="https://www.getzola.org/">Zola</a>, hosted with <a
         href="https://github.com/semanticdata/zola-guava/">GitHub Pages.</p>
     {% include "partials/social-links.html" %}
   </footer>

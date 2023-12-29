@@ -1,12 +1,12 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% block content %}
 <article>
     <header>
-        <h1>404: Page not found</h1>
+        <h2>404: Page Not Found</h2>
     </header>
     <div>
-        The page or project you're looking for cannot be found!<br><br>
+        The page or project you're looking for cannot be found!<br>
         Have a 404 derg instead:
     </div>
     <pre>
@@ -27,5 +27,8 @@
          ~- _             /        >..----.\\\
              ~ - - - - ^}_ _ _ _ _ _ _.-\\\
     </pre>
+
+    <p>Click <a href="{{ config.base_url }}">here</a> to go back.</p>
+
 </article>
 {% endblock content %}

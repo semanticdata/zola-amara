@@ -2,7 +2,7 @@
 
 <!-- Layout for blog section. -->
 {% block content %}
-<h1>{{ section.title }}</h1>
-<p>{{ section.content | safe }}</p>
+<h2 class="blog-title">{{ section.title }}</h2>
+<p class="blog-content">{{ section.content | safe }}</p>
 {% include "partials/post-loop.html" %}
 {% endblock content %}

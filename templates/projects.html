@@ -2,7 +2,7 @@
 
 <!-- Layout for projects section. -->
 {% block content %}
-<h1>{{ section.title }}</h1>
-<p>{{ section.content | safe }}</p>
+<h2 class="project-title">{{ section.title }}</h2>
+<p class="project-content">{{ section.content | safe }}</p>
 {% include "partials/project-loop.html" %}
 {% endblock content %}

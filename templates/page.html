@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
-{% block breadcrumbs %}
-{# {% include "partials/breadcrumbs.html" %} #}
-{% endblock breadcrumbs %}
+{# {% block breadcrumbs %}
+{% include "partials/breadcrumbs.html" %}
+{% endblock breadcrumbs %} #}
 
 {% block content %}
 <article>
+  <h2 class="page-title">{{ page.title }}</h2>
 
   {# {% if page.toc %}
   {% include "partials/toc.html" %}
   {% endif %} #}
 
-  <h1>{{ page.title }}</h1>
-  {{ page.content | safe }}
+  <p class="page-content">{{ page.content | safe }}</p>
 </article>
 {% endblock content %}
