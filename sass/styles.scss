@@ -62,6 +62,48 @@ table td {
   padding: 4px !important;
 }
 
+// Header
+#site-title {
+  width: 100%;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+// Footer
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  & i {
+    font-size: 1.25rem;
+  }
+}
+
+// Misc. Items
+time {
+  font-size: 14px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.loop-title {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
 // Media and Layout
 @media screen and (max-width: 1500px) {
   .placeholder {
