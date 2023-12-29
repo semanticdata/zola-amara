@@ -4,7 +4,7 @@
 {% block content %}
 <article>
   <h2 class="post-title">{{ page.title }}</h2>
-  <time class="post-time" itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
+  <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
     %Y") | safe }} •
     {{ page.reading_time | safe }} minutes</time>
 

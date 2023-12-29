@@ -5,7 +5,7 @@
   <a href="{{ page.permalink }}">
     <h2 class="loop-title">{{ page.title | safe }}</h2>
   </a>
-  <time class="loop-time" itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
+  <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
     %Y") | safe }} •
     {{
     page.reading_time }} minutes</time>

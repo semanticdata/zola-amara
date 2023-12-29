@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ get_url(path='styles.css') }}">
 </head>
 
-<body>
+<body id="homepage-body">
 
   <header>
 
@@ -26,7 +26,7 @@
     </div>
 
     <nav class="homepage-nav">
-      <ul class="homepage-social-list">
+      <ul id="homepage-nav-list">
         {% for link in config.extra.internalLinks %}
         <li>
           <a class="site-nav" href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
@@ -34,7 +34,7 @@
         {% endfor %}
       </ul>
 
-      <ul class="homepage-social-list">
+      <ul id="homepage-social-list">
         <li>
           <a href="https://forgetfulnotes.com/" aria-label="Digital Garden" target="_blank">
             <i class="fa-solid fa-seedling"></i>

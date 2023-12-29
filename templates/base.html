@@ -20,7 +20,7 @@
           {{ config.title }}
         </a>
       </h1>
-      <ul class="social-nav">
+      <ul class="site-nav-list">
         {% for link in config.extra.internalLinks %}
         <li>
           <a href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>

@@ -2,9 +2,10 @@
 
 @use "variables" as vars;
 @use "fonts";
+@use "homepage";
 @use "custom";
 
-//Layout
+// Main Layout
 html {
   line-height: 1.25;
   -ms-text-size-adjust: 100%;
@@ -17,8 +18,6 @@ body {
   flex-direction: column;
   margin: auto;
   max-width: vars.$pagewidth;
-  // min-height: 100vh;
-  // justify-content: center;
 }
 
 // Headings
@@ -42,7 +41,7 @@ a {
 
   &:hover {
     color: vars.$hovercolor;
-    text-decoration: underline 3px;
+    text-decoration: underline 2px;
   }
 }
 
