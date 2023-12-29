@@ -1,15 +1,9 @@
 {% if section.pages %}
 {% for page in section.pages %}
 
-{#
-<hr> #}
-
 <article>
 
-  {# <a href="{{ page.permalink | safe }}"> #}
-    <h1 class="loop-title">{{ page.title | safe }}</h1>
-  {# </a> #}
-
+  <h2 class="loop-title">{{ page.title }}</h2>
   {{ page.content | safe }}
 
 </article>

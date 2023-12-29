@@ -1,5 +1,5 @@
 <nav aria-label="breadcrumbs">
-  <ul id="breadcrumbs">
+  <ul class="breadcrumbs-list">
     <li><a href="/">Home</a></li>
     {% set current = section | default(value=page) %}
     {% for ancestor in current.ancestors %}
@@ -12,7 +12,8 @@
     </li>
     {% endfor %}
     /
-    <li><a href="{{ current.permalink }}">{{ current.title }}</a></li>
+    <li>{{ current.title }}</li>
+    {# <li><a href="{{ current.permalink }}">{{ current.title }}</a></li> #}
 
   </ul>
 </nav>

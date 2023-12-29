@@ -1,14 +1,12 @@
 {% if section.pages %}
 {% for page in section.pages %}
 
-{#
-<hr> #}
-
 <article>
   <a href="{{ page.permalink }}">
     <h2 class="loop-title">{{ page.title | safe }}</h2>
   </a>
-  <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
+  <time class="loop-time" itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
+    %Y") | safe }} •
     {{
     page.reading_time }} minutes</time>
   {% if page.description %}
