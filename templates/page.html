@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block breadcrumbs %}
+{% include "partials/breadcrumbs.html" %}
+{% endblock breadcrumbs %}
+
+{% block content %}
+<article>
+  {% if page.description %}
+  <p>{{ page.description | safe }}</p>
+  {% endif %}
+  {% if page.toc %}
+  {% include "partials/toc.html" %}
+  {% endif %}
+  <hr>
+  {{ page.content | safe }}
+</article>
+{% endblock content %}

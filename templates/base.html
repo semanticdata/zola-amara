@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | safe }} | {% elif section.title %}{{ section.title | safe }} | {% endif %}{{
+    config.title | safe }}</title>
+  <meta name="description" itemprop="about" content="{{ config.description }}">
+  {#
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> #}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="{{ get_url(path='styles.css') }}">
+</head>
+
+<body>
+
+  <header id="header" class="section">
+    <div class="container is-max-desktop">
+      <nav class="navbar">
+        <div class="navbars-brand">
+          <a href="{{ config.base_url }}" aria-label="{{ config.title }}">
+            <h1 class="site-title title navbar-item">
+              {% if section %}
+              {{ section.title }}
+              {% endif %}
+              {% if page %}
+              {{ page.title }}
+              {% endif %}
+            </h1>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-end">
+            <a class="navbar-item" href="{{ config.base_url }}" aria-label="{{ config.title }}">Home</a>
+            {% for link in config.extra.internalLinks %}
+            <a class="navbar-item" href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
+            {% endfor %}
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <hr>
+
+  <main class="section">
+    <div class="container is-max-desktop">
+      {% block breadcrumbs %}{% endblock breadcrumbs %}
+      <div class="content">
+        {% block content %}{% endblock content %}
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="has-text-centered">
+      <p>Powered by <strong>Bulma</strong> and Zola.</p><br>
+    </div>
+    {% include "partials/social-links.html" %}
+  </footer>
+
+  </section>
+</body>
+
+</html>

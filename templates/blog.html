@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+<!-- Layout for blog section. -->
+{% block content %}
+{% if section.description %}
+<p>{{ section.description }}</p>
+{% endif %}
+{{ section.content | safe }}
+{% include "partials/post-loop.html" %}
+{% endblock content %}

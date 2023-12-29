@@ -1,0 +1,25 @@
+base_url = "https://semanticdata.github.io/zola-guava/"
+title = "Guava"
+description = "A Zola theme without a real plan."
+
+compile_sass = true
+build_search_index = false
+minify_html = false
+generate_feed = false
+
+author = "Miguel Pimentel"
+# taxonomies = [
+#   { name = "categories", feed = false },
+#   { name = "tags", feed = false },
+# ]
+
+[markdown]
+highlight_code = true
+external_links_target_blank = true
+smart_punctuation = true
+
+[extra]
+internalLinks = [
+  { url = "posts", name = "Blog" },
+  { url = "projects", name = "Projects" },
+]

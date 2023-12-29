@@ -1,0 +1,65 @@
+@use "variables" as vars;
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: vars.$pagewidth;
+}
+
+.section {
+  padding: 1.5rem 2rem;
+}
+
+.post-title {
+  margin-top: 0 !important;
+}
+
+.social-list {
+  display: flex;
+  gap: 2rem;
+  & i {
+    font-size: 1.25rem;
+  }
+}
+
+.page-list,
+.social-list,
+#site-navbar.navbar,
+#social-nav.navbar {
+  justify-content: center;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.navbars {
+  display: flex;
+  margin: 1rem auto;
+}
+
+.navbars-brand {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 20px;
+}
+
+.navbars-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 20px;
+}
+
+.pfp {
+  border-radius: 50%;
+  margin-right: 1rem;
+  filter: grayscale(1);
+}
+
+.site-title {
+  font-size: 24px;
+}

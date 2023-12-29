@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@use "variables" as vars;
+@use "fonts";
+@use "custom";
+
+body {
+  font-family: Bitter, serif;
+}
+
+// Force details, toc open/closed based on page width.
+// details {
+//   --details-force-closed: (max-width: 47.9375em);
+// }
+
+// Links
+a {
+  font-weight: bold;
+
+  &:hover {
+    color: vars.$hovercolor;
+  }
+}
+
+a.navbar-item:hover,
+.footer {
+  background: transparent !important;
+}
+
+// Tables
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+table thead th,
+table tfoot th {
+  background: vars.$translucent;
+}
+
+table th,
+table td {
+  padding: 4px !important;
+}
+
+// Media and Layout
+@media screen and (max-width: 1500px) {
+  .site-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .site-title {
+    font-size: 20px;
+  }
+}

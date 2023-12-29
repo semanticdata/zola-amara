@@ -1,0 +1,51 @@
+{# <details open class="toc"> #}
+  <details class="toc">
+    <summary class="is-clickable">
+      Table of Contents
+    </summary>
+    <ul class="sublist-toc">
+      {% for h1 in page.toc %}
+      <li>
+        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        {% if h1.children %}
+        <ul class="sublist-toc">
+          {% for h2 in h1.children %}
+          <li>
+            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+            <ul class="sublist-toc">
+              {% for h3 in h2.children %}
+              <li>
+                <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+
+  <!-- Open Details element (toc) based on window size. -->
+  <script>
+    var details = document.querySelector("details");
+    var forceOpen = window.getComputedStyle(details).getPropertyValue("--details-force-closed");
+
+    function forceState(isOpen) {
+      if (isOpen) {
+        details.setAttribute("open", "open");
+      } else {
+        details.removeAttribute("open");
+      }
+    }
+
+    if (forceOpen && "matchMedia" in window) {
+      var mm1 = window.matchMedia(forceOpen);
+      forceState(!mm1.matches);
+      mm1.addListener(function (e) {
+        forceState(!e.matches);
+      });
+    }
+  </script>

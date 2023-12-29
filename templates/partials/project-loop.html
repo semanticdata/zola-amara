@@ -1,0 +1,14 @@
+{% if section.pages %}
+{% for page in section.pages %}
+<hr>
+<article>
+
+  <a href="{{ page.permalink | safe }}">
+    <h1>{{ page.title | safe }}</h1>
+  </a>
+
+  {{ page.content | safe }}
+
+</article>
+{% endfor %}
+{% endif %}

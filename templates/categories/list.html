@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Categories</h1>
+
+<ul class="base-list">
+  {% for category in terms %}
+  <li>
+    <a href="{{ category.permalink }}">{{ category.name | capitalize }}</a> ({{ category.pages | length }})
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}
