@@ -10,7 +10,8 @@
     {{
     page.reading_time }} minutes</time>
   {% if page.description %}
-  <p>{{ page.description | safe }} <a href="{{ page.permalink | safe }}">Read more…</a></p>
+  <p>{{ page.description | safe }}</p>
+  <a href="{{ page.permalink | safe }}">Read more…</a>
   {% endif %}
 </article>
 {% endfor %}

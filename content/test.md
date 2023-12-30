@@ -155,7 +155,7 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem i
 
 ## Images
 
-![image](https://just-the-docs.com/assets/images/small-image.jpg)
+![example image](https://just-the-docs.com/assets/images/small-image.jpg)
 
 ## Other Elements — Abbr, Sub, Sup, Kbd, Mark
 

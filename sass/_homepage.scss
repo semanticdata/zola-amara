@@ -1,3 +1,16 @@
+#homepage-title {
+  display: inline;
+}
+
+#homepage-body {
+  height: 100vh;
+  justify-content: center;
+}
+
+#homepage-content {
+  text-align: justify;
+}
+
 .homepage-nav {
   display: inline-flex;
   list-style: none;
@@ -6,6 +19,17 @@
   & i {
     font-size: 1.25rem;
   }
+}
+
+#homepage-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#homepage-logo {
+  border-radius: 50%;
+  margin-right: 1rem;
+  filter: grayscale(1);
 }
 
 #homepage-nav-list {
@@ -21,28 +45,4 @@
   gap: 1rem;
   padding: 0;
   margin-left: auto;
-}
-
-#homepage-logo {
-  border-radius: 50%;
-  margin-right: 1rem;
-  filter: grayscale(1);
-}
-
-#homepage-title {
-  display: inline;
-}
-
-#homepage-logo-container {
-  display: flex;
-  align-items: center;
-}
-
-#homepage-body {
-  height: 100vh;
-  justify-content: center;
-}
-
-#homepage-content {
-  text-align: justify;
 }
