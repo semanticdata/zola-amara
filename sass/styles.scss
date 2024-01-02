@@ -36,6 +36,30 @@ h6 {
   -ms-word-break: break-all;
   word-break: break-word;
 }
+// Clamp - min/max/preferred
+h1 {
+  font-size: clamp(1.5rem, 8vw - 1.7rem, 2rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 8vw - 1.6rem, 1.8rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 8vw - 1.5rem, 1.6rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 8vw - 1.4rem, 1.4rem);
+}
+
+h5 {
+  font-size: clamp(1.1rem, 8vw - 1.3rem, 1.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 8vw - 1.2rem, 1rem);
+}
 
 // Links
 a {
@@ -49,6 +73,23 @@ a {
     text-decoration: underline 0.15rem;
     transition-duration: 0.4s;
     // text-decoration-color: rgba(0, 0, 0, 1);
+  }
+}
+
+// Squiggles (Homepage Nav Links)
+
+a.squiggle {
+  background: linear-gradient(to bottom, #0087ca 0%, #0087ca 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-15px);}}%3C/style%3E%3Cpath fill='none' stroke='%230087ca' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-size: auto 4px;
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -70,22 +111,34 @@ table td {
   padding: 4px !important;
 }
 
-// Header
-#site-title {
-  width: 100%;
-  font-size: 24px;
-  margin: auto;
+// Code
+pre {
+  overflow-x: scroll;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-.site-nav {
-  display: flex;
+code {
+  overflow-wrap: break-word;
+  background: vars.$translucent;
+  border-radius: 4px;
+  padding: 0.15rem 0.3rem;
 }
 
-.site-nav-list {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  padding: 0;
+// Images and Full-width images
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.full-width-img {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  width: 100vw;
 }
 
 // Misc. Items
@@ -93,16 +146,20 @@ time {
   font-size: 14px;
 }
 
-.breadcrumbs-list {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-  padding: 0;
+article p {
+  text-align: justify;
 }
 
-.loop-title {
-  font-size: 24px;
-  margin-bottom: 0rem;
+blockquote {
+  border-left: solid #0087ca 0.15rem;
+  padding-left: 1rem;
+  margin: 1rem 2rem;
+  font-style: italic;
+}
+
+// Fncy Quotes <q></q>
+q {
+  quotes: "“" "”";
 }
 
 // Media and Layout

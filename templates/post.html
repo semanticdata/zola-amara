@@ -4,9 +4,19 @@
 {% block content %}
 <article>
   <h2 class="post-title">{{ page.title }}</h2>
-  <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
+  <time id="post-time" itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e,
     %Y") | safe }} •
     {{ page.reading_time | safe }} minutes</time>
+
+    {% if page.toc %}
+    {% include "partials/toc.html" %}
+    {% endif %}
+
+    {% if page.description %}
+    <blockquote>
+      {{ page.description }}
+    </blockquote>
+    {% endif %}
 
   {# {% if page.toc %}
   {% include "partials/toc.html" %}

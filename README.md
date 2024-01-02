@@ -10,45 +10,55 @@
 
 ## Introduction
 
-Guava is a [Zola](https://www.getzola.org) theme.
+Guava is a [Zola](https://www.getzola.org) theme. It is currently a work-in-progress.
 
 Check out the live [Demo](https://miguelpimentel.do/zola-guava/).
 
 ## Features
 
-Placeholder for future feature list.
+- Landing page (About page)
+- Blog section
+- Projects section (with optional project pages)
+- Font Awesome Icons (used in the homepage)
 
 ## Requirements
 
-Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.17.2.
+Before using the theme, you need to install at least [Zola](https://www.getzola.org/documentation/getting-started/installation/) version 0.17.2. You can download it from the [official repo](https://github.com/)**. (_TODO Fix download link_)
 
-## Quick Start
+## Local Development
 
 ```bash
 git clone git@github.com:semanticdata/zola-guava.git
 cd zola-guava
 zola serve
 # open http://127.0.0.1:1111/ in the browser
+# you may terminate the process with `Ctrl + C`.
 ```
 
-## Customization
+(_TODO Fix blockquote/code-block_)
+<pre>git clone git@github.com:semanticdata/zola-guava.git
+cd zola-guava
+zola serve
+You may terminate the process with <kbd>Ctrl + C</kbs>.
+</pre>
 
-You can customize your configurations, templates and content for yourself. Look
-at the `config.toml` and templates files in this repo for an idea.
+**Useful Commands**
 
-In most cases you only need to modify the content in the `config.toml` file to
-customize your blog.
-
-### Custom CSS styles
-
-Adding your custom css is as easy as adding your own styles to the `sass/_custom.scss` file.
-
-## Useful Commands
+(_TODO Decide between using H3's and using _bolded_ subsections_)
 
 | Command      | Description     |
 | ------------ | --------------- |
 | `zola build` | Build only      |
 | `zola serve` | Build and Serve |
+
+## Customization
+
+In most cases you only need to modify the content in the `config.toml` file to
+customize your blog.
+
+**Custom CSS styles**
+
+Adding your custom css is as easy as adding your own styles to the `sass/_custom.scss` file.
 
 ## Acknowledgments
 

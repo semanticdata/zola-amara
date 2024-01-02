@@ -9,10 +9,10 @@ generate_feed = true
 feed_filename = "atom.xml"
 
 author = "Miguel Pimentel"
-# taxonomies = [
-#   { name = "categories", feed = false },
-#   { name = "tags", feed = false },
-# ]
+taxonomies = [
+  # { name = "categories", feed = true },
+  # { name = "tags", feed = true },
+]
 
 [markdown]
 highlight_code = true

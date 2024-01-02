@@ -10,13 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='atom.xml') }}">
   <link rel="sitemap" type="application/xml" href="{{ get_url(path='sitemap.xml') }}">
-  {# <link rel="preload" href="./387-100x100.jpg"> #}
-  {# <link rel="prefetch" href="./387-100x100.jpg"> #}
+  {#
+  <link rel="preload" href="./387-100x100.jpg"> #}
+  {#
+  <link rel="prefetch" href="./387-100x100.jpg"> #}
 
   <!-- Provided you have a rendered PNG fallback named favicon.png -->
-  <link rel="icon" type="image/png" href="favicon.png" >
+  <link rel="icon" type="image/png" href="favicon.png">
   <!-- Provided the SVG icon is named favicon.svg -->
-  {# <link rel="icon" type="image/svg" href="favicon-asset.svg" > #}
+  {#
+  <link rel="icon" type="image/svg" href="favicon-asset.svg"> #}
 
 </head>
 
@@ -37,7 +40,8 @@
       <ul id="homepage-nav-list">
         {% for link in config.extra.internalLinks %}
         <li>
-          <a class="site-nav squiggle" href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
+          <a class="site-nav squiggle" href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name
+            }}</a>
         </li>
         {% endfor %}
       </ul>
@@ -67,12 +71,6 @@
     {% if section.content %}
     {{ section.content | safe }}
     {% endif %}
-
-
-    
-
-
-
   </main>
 
 </body>
