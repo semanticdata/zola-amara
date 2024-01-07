@@ -14,6 +14,10 @@ Amana is a theme for [Zola](https://www.getzola.org). It is currently a work-in-
 
 Check out the live [Demo](https://miguelpimentel.do/zola-amana/).
 
+### Where The Name Comes From
+
+The name Amana comes from the [Linnaeosicyos amara](https://en.wikipedia.org/wiki/Linnaeosicyos), the only species of flowering plants within the Linnaeosicyos genus. It is edemic to the Dominican Republic, my home country.
+
 ## Features
 
 - Landing page (About page)
