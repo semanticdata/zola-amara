@@ -14,18 +14,18 @@ Guava is a theme for [Zola](https://www.getzola.org). It is currently a work-in-
 
 Check out the live [Demo](https://miguelpimentel.do/zola-guava/).
 
-## Screenshots
-
-![website screenshot 1](screenshot-1.png)
-
-![website screenshot 2](screenshot-2.png)
-
 ## Features
 
 - Landing page (About page)
 - Blog section
 - Projects section (with optional project pages)
 - Font Awesome Icons (used in the homepage)
+
+## Screenshots
+
+![website screenshot 1](screenshot-1.png)
+
+![website screenshot 2](screenshot-2.png)
 
 ## Running the Site Locally
 
