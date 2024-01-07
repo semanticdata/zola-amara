@@ -1,18 +1,18 @@
-<h1 align="center">🍈 Zola Guava</h1>
+<h1 align="center">🌿 Zola Amana</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-guava" />
-  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-guava" />
-  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-guava" />
-  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-guava" />
-  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-guava.svg" />
+  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-amana" />
+  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-amana" />
+  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-amana" />
+  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-amana" />
+  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-amana.svg" />
 </p>
 
 ## Introduction
 
-Guava is a theme for [Zola](https://www.getzola.org). It is currently a work-in-progress.
+Amana is a theme for [Zola](https://www.getzola.org). It is currently a work-in-progress.
 
-Check out the live [Demo](https://miguelpimentel.do/zola-guava/).
+Check out the live [Demo](https://miguelpimentel.do/zola-amana/).
 
 ## Features
 
@@ -39,9 +39,9 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ```bash
 # clone the repo
-git clone git@github.com:semanticdata/guava.git
+git clone git@github.com:semanticdata/amana.git
 # change directory into the cloned folder
-cd guava
+cd amana
 # serve the site locally
 zola serve
 # open http://127.0.0.1:1111/ in the browser
@@ -69,11 +69,11 @@ Adding custom CSS is as easy as adding your styles to `sass/_custom.scss`. This 
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for **Guava**. Please
-search [existing issues](https://github.com/semanticdata/guava/issues). It’s
+We use GitHub Issues as the official bug tracker for **Amana**. Please
+search [existing issues](https://github.com/semanticdata/amana/issues). It’s
 possible someone has already reported the same problem.
 
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/guava/issues/new).
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/amana/issues/new).
 
 ## Contributing
 

@@ -1,5 +1,5 @@
-base_url = "https://semanticdata.github.io/zola-guava/"
-title = "Guava"
+base_url = "https://semanticdata.github.io/zola-amana/"
+title = "Amana"
 description = "A Zola theme without a real plan."
 
 compile_sass = true
@@ -9,10 +9,10 @@ generate_feed = true
 feed_filename = "atom.xml"
 
 author = "Miguel Pimentel"
-taxonomies = [
-  # { name = "categories", feed = true },
-  # { name = "tags", feed = true },
-]
+# taxonomies = [
+#   { name = "categories", feed = true },
+#   { name = "tags", feed = true },
+# ]
 
 [markdown]
 highlight_code = true
