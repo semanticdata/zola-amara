@@ -8,15 +8,15 @@
     %Y") | safe }} •
     {{ page.reading_time | safe }} minutes</time>
 
-    {% if page.toc %}
-    {% include "partials/toc.html" %}
-    {% endif %}
+  {% if page.toc %}
+  {% include "partials/toc.html" %}
+  {% endif %}
 
-    {% if page.description %}
-    <blockquote>
-      {{ page.description }}
-    </blockquote>
-    {% endif %}
+  {% if page.description %}
+  <blockquote>
+    {{ page.description }}
+  </blockquote>
+  {% endif %}
 
   {# {% if page.toc %}
   {% include "partials/toc.html" %}

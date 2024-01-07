@@ -1,0 +1,10 @@
+name = "Guava"
+description = "A theme for Zola."
+license = "MIT"
+homepage = "https://github.com/semanticdata/zola-guava"
+min_version = "0.18.0"
+demo = "https://semanticdata.github.io/zola-guava"
+
+[author]
+name = "Miguel Pimentel"
+homepage = "https://miguelpimentel.do"
