@@ -1,9 +1,9 @@
-name = "Amana"
+name = "Amara"
 description = "A theme for Zola."
 license = "MIT"
-homepage = "https://github.com/semanticdata/zola-amana"
+homepage = "https://github.com/semanticdata/zola-amara"
 min_version = "0.18.0"
-demo = "https://semanticdata.github.io/zola-amana"
+demo = "https://semanticdata.github.io/zola-amara"
 
 [author]
 name = "Miguel Pimentel"

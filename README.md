@@ -1,22 +1,22 @@
-<h1 align="center">🌿 Zola Amana</h1>
+<h1 align="center">🌿 Zola Amara</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-amana" />
-  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-amana" />
-  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-amana" />
-  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-amana" />
-  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-amana.svg" />
+  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-amara" />
+  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-amara" />
+  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-amara" />
+  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-amara" />
+  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-amara.svg" />
 </p>
 
 ## Introduction
 
-Amana is a theme for [Zola](https://www.getzola.org). It is currently a work-in-progress.
+Amara is a theme for [Zola](https://www.getzola.org). It is currently a work-in-progress.
 
-Check out the live [Demo](https://miguelpimentel.do/zola-amana/).
+Check out the live [Demo](https://miguelpimentel.do/zola-amara/).
 
 ### Where The Name Comes From
 
-The name Amana comes from the [Linnaeosicyos amara](https://en.wikipedia.org/wiki/Linnaeosicyos), the only species of flowering plants within the Linnaeosicyos genus. It is edemic to the Dominican Republic, my home country.
+The name Amara comes from the [Linnaeosicyos amara](https://en.wikipedia.org/wiki/Linnaeosicyos), the only species of flowering plants within the Linnaeosicyos genus. It is edemic to the Dominican Republic, my home country.
 
 ## Features
 
@@ -25,11 +25,11 @@ The name Amana comes from the [Linnaeosicyos amara](https://en.wikipedia.org/wik
 - Projects section (with optional project pages)
 - Font Awesome Icons (used in the homepage)
 
-## Screenshots
+<!-- ## Screenshots
 
 ![website screenshot 1](screenshot-1.png)
 
-![website screenshot 2](screenshot-2.png)
+![website screenshot 2](screenshot-2.png) -->
 
 ## Running the Site Locally
 
@@ -43,9 +43,9 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ```bash
 # clone the repo
-git clone git@github.com:semanticdata/amana.git
+git clone git@github.com:semanticdata/amara.git
 # change directory into the cloned folder
-cd amana
+cd amara
 # serve the site locally
 zola serve
 # open http://127.0.0.1:1111/ in the browser
@@ -73,11 +73,11 @@ Adding custom CSS is as easy as adding your styles to `sass/_custom.scss`. This 
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for **Amana**. Please
-search [existing issues](https://github.com/semanticdata/amana/issues). It’s
+We use GitHub Issues as the official bug tracker for **Amara**. Please
+search [existing issues](https://github.com/semanticdata/amara/issues). It’s
 possible someone has already reported the same problem.
 
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/amana/issues/new).
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/amara/issues/new).
 
 ## Contributing
 

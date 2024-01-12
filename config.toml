@@ -1,5 +1,5 @@
-base_url = "https://semanticdata.github.io/zola-amana/"
-title = "Amana"
+base_url = "https://semanticdata.github.io/zola-amara/"
+title = "Amara"
 description = "A Zola theme without a real plan."
 
 compile_sass = true
